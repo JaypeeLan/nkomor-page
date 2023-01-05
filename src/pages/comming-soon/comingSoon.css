@@ -1,0 +1,103 @@
+#ComingSoon {
+  min-height: 100vh;
+  background-color: var(--bg-blue);
+  color: #fff;
+}
+
+#ComingSoon .logo {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+#ComingSoon .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr;
+  max-width: 2000px;
+
+  padding: 4rem 1rem 0 1rem;
+ /* background-color: red; */
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ComingSoon .details > div:first-child {
+  /* background-color: purple; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  justify-content: center;
+}
+
+#ComingSoon .details > div:first-child > * {
+  padding-bottom: 20px;
+}
+
+#ComingSoon .details > div:first-child > h1 {
+  text-transform: uppercase;
+  font-size: clamp(50px, 4.5vw, 10rem);
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+}
+
+#ComingSoon .details > div:first-child > p {
+  font-size: clamp(18px, 2.8vw, 20px);
+  width: 85%;
+  line-height: 30px;
+}
+/* ---------------------------------------------- */
+
+#ComingSoon .details > div:last-child {
+  /* background-color: blue; */
+  min-width: 40rem;
+  display: flex;
+  align-items: center;
+}
+
+/* ============================================ */
+#ComingSoon .social-icons {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0px;
+  width: 100px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30vh;
+}
+
+#ComingSoon .social-icons a {
+  padding: 5px;
+}
+
+/* ------------------------------------ */
+@media screen and (max-width: 895px) {
+  #ComingSoon .details {
+    flex-direction: column;
+  }
+
+  #ComingSoon .details > div:first-child {
+    align-items: center;
+  }
+
+  #ComingSoon .details > div:last-child {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #ComingSoon .details > div:last-child {
+    min-width: initial;
+    flex-wrap: wrap;
+  }
+
+  #ComingSoon .details > div:first-child > p {
+    width: 100%;
+  }
+}
