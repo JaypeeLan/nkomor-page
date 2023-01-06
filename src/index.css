@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Poppins:wght@200;400;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Poppins:wght@200;400;600;700;900&display=swap");
 
 * {
   padding: 0;
@@ -6,14 +6,20 @@
   box-sizing: border-box;
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
   --bg-blue: #007e7c;
+  --dark-blue: #00605f;
 }
 
-img{
+img {
   max-width: 100%;
+}
+
+h3{
+  font-weight: 700;
+  font-size: clamp(26px, 3vw, 36px);
 }

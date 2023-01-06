@@ -1,0 +1,35 @@
+.feature {
+  display: flex;
+  max-width: 1337px;
+  margin: 40px auto;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.feature .feature-text {
+  max-width: 600px;
+  padding: 10px;
+  text-align: left;
+}
+
+.feature .feature-text h3 {
+  padding-bottom: 25px;
+  max-width: 80%;
+  font-size: clamp(28px, 2.5vw, 30px);
+  color: var(--dark-blue);
+}
+
+.feature .feature-text p {
+  font-size: clamp(14px, 1vw, 19px);
+  width: 80%;
+}
+/* -------- */
+#features > div:nth-child(3) > div:first-child,
+#features > div:nth-child(5) > div:first-child {
+  order: 1;
+  position: relative;
+  left: 128px;
+}

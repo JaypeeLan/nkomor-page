@@ -1,6 +1,6 @@
 import "./App.css";
-import ComingSoon from "./pages/comming-soon/ComingSoon";
-import Home from "./pages/comming-soon/Home";
+import Home from "./pages/home/Home";
+import Features from "./components/Features";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -8,8 +8,8 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<ComingSoon />} />
-          <Route path="/about" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<Features />} />
           <Route path="/services" element={<Home />} />
         </Routes>
       </div>

@@ -1,0 +1,197 @@
+#home {
+  text-align: center;
+}
+
+#home .background img {
+  width: 100%;
+}
+
+/* -------------------------------- */
+#home .home-details {
+  text-align: center;
+  min-height: 60vh;
+  background: url(../../images/homeBg.svg);
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  color: #fff;
+}
+
+#home > div.home-details > div:nth-child(1) > p {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+#home .home-details > div:last-child {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#home > div.home-details > div:nth-child(2) > p {
+  position: absolute;
+  top: 311px;
+  width: 140px;
+}
+
+#home .home-details > div:last-child > img:first-child {
+  left: 400px;
+}
+#home .home-details > div:last-child > img:last-child {
+  margin-top: -370px;
+}
+
+#home .home-details > img {
+  text-align: center;
+}
+
+/* ---------------------- Features --------------- */
+#features {
+  margin-top: 20px;
+}
+
+#features > h2 {
+  color: var(--dark-blue);
+  font-size: 700;
+  font-size: clamp(36px, 2.5vw, 36px);
+}
+
+/* -------------------- who are we ------------------- */
+#about {
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 40px;
+  color: #fff;
+  background-color: var(--dark-blue);
+  width: 80%;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  position: relative;
+}
+
+#about .circle {
+  height: 100px;
+  width: 100px;
+  background-color: var(--bg-blue);
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+#about .circle1 {
+  position: absolute;
+  left: -32px;
+  z-index: -1;
+  top: -15px;
+}
+
+#about .circle2 {
+  position: absolute;
+  right: -32px;
+  z-index: 2;
+  bottom: -55px;
+}
+
+#about > div:nth-child(2) h3 {
+  font-size: clamp(26px, 2vw, 36px);
+  padding-bottom: 15px;
+}
+
+#about > div:nth-child(2) > p {
+  font-size: 14px;
+  line-height: 28px;
+  padding-bottom: 20px;
+}
+
+#about > div:nth-child(2) > button {
+  padding: 0.5rem 1.7rem;
+  background: #fdfdfd;
+  border: 2px solid rgba(0, 96, 95, 0.9);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+/* ----------------- video ---------------- */
+#video {
+  margin-top: 15vh;
+}
+
+#video > h3 {
+  padding-bottom: 20px;
+  color: var(--dark-blue);
+}
+
+#video > div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ------------------- FAQ ------------------- */
+
+#faq {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 0 40px 0 40px;
+}
+
+#faq > div:nth-child(1) > div {
+  width: 80%;
+}
+
+#faq > div:nth-child(1) > div > p {
+  display: inline;
+}
+
+#faq > div:nth-child(1) > div > a {
+  position: relative;
+  top: 2px;
+  left: 7px;
+}
+
+#faq > div:nth-child(1) > div > a > img {
+  text-align: left;
+  width: 20px;
+  height: 20px;
+}
+
+/* ------------------------------------------ */
+#get-started {
+  background: url(../../images/started.svg) no-repeat center;
+  background-size: cover;
+  min-height: 40vh;
+  color: #fff;
+  padding-top: 50px;
+}
+
+#get-started > button {
+  outline: none;
+  border: none;
+  padding: 0.5rem 1.7rem;
+  background: var(--bg-blue);
+  color: #fdfdfd;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+#get-started > *{
+  padding-bottom: 20px;
+}
+
