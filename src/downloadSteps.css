@@ -1,0 +1,16 @@
+#download-steps {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+#download-steps h2 {
+  text-transform: uppercase;
+}
+
+#download-steps p {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 40px;
+  line-height: 30px;
+}

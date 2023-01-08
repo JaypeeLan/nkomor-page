@@ -12,6 +12,8 @@
   min-height: 60vh;
   background: url(../../images/homeBg.svg);
   background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   padding-top: 100px;
   color: #fff;
 }

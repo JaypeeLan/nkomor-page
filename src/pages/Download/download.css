@@ -1,0 +1,73 @@
+#download div.download-page {
+  background-color: red;
+  min-height: calc(100vh - 80px);
+  background: url("../../images/groupBg.svg") no-repeat center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+#download div.download-page > div.download-page-left > h2 {
+  font-size: clamp(30px, 3vw, 42px);
+  padding-bottom: 30px;
+}
+
+#download div.download-page > div.download-page-left > p {
+  width: max(250px, 80%);
+  padding-bottom: 50px;
+}
+
+#download > div > div.download-page-left > div.download-page-images {
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#download > div > div.download-page-left > div.download-page-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+#download > div > div.download-page-left > div.download-page-stats div span {
+  opacity: 0.3;
+}
+
+#download > div > div.download-page-left > div.download-page-stats > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#download
+  > div
+  > div.download-page-left
+  > div.download-page-stats
+  > div
+  > span:nth-child(2) {
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+#download > div > div.download-page-right {
+  position: relative;
+  width: 80rem;
+}
+
+
+#download > div > div.download-page-right > img:nth-child(2) {
+  position: absolute;
+  right: 58px;
+
+}
+/* ---------------------- */
+#download .download-steps{
+  width: 90%;
+  margin: 50px auto;
+}

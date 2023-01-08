@@ -2,6 +2,7 @@ import React from "react";
 // -------------------------------------
 import Navbar from "../../components/Navbar";
 import Features from "../../components/Features";
+import Footer from "../../components/Footer";
 import "./home.css";
 // ------------------------------------
 import circles from "../../images/circles.svg";
@@ -24,13 +25,7 @@ const Home = () => {
   return (
     <>
       <div id="home">
-        <Navbar
-          navItemOne="Home"
-          navItemTwo="About"
-          navItemThree="Contact Us"
-          navItemFour="FAQ"
-          btnTitle="Download"
-        />
+        <Navbar />
         {/* ------------------------------------- */}
 
         <div className="home-details">
@@ -135,6 +130,8 @@ const Home = () => {
           <p>Download Our App Today!</p>
           <button>Download</button>
         </section>
+        {/* ------------------footer ------------- */}
+        <Footer linksColor="#000" />
       </div>
     </>
   );

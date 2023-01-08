@@ -1,6 +1,7 @@
 import "./App.css";
 import Home from "./pages/home/Home";
-import Features from "./components/Features";
+import Download from "./pages/Download/Download";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -9,8 +10,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<Features />} />
-          <Route path="/services" element={<Home />} />
+          <Route path="/download" element={<Download />} />
         </Routes>
       </div>
     </Router>

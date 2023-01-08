@@ -23,3 +23,11 @@ h3{
   font-weight: 700;
   font-size: clamp(26px, 3vw, 36px);
 }
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}

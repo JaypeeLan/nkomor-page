@@ -11,13 +11,7 @@ import {
   NavBtnLink,
 } from "./NavbarComponents";
 
-const Navbar = ({
-  navItemOne,
-  navItemTwo,
-  navItemThree,
-  navItemFour,
-  btnTitle,
-}) => {
+const Navbar = () => {
   const showNav = () => {
     console.log("hello");
   };
@@ -30,23 +24,23 @@ const Navbar = ({
         <Bars onClick={showNav} />
         <NavMenu>
           <NavLink to="/" activeStyle>
-            {navItemOne}
+            Home
           </NavLink>
           <img src={line} alt="divider" srcset="" />
           <NavLink to="/" activeStyle>
-            {navItemTwo}
+            About
           </NavLink>
           <img src={line} alt="divider" srcset="" />
           <NavLink to="/" activeStyle>
-            {navItemThree}
+            Contact Us
           </NavLink>
           <img src={line} alt="divider" srcset="" />
           <NavLink to="/" activeStyle>
-            {navItemFour}
+            FAQ
           </NavLink>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to="/">{btnTitle}</NavBtnLink>
+          <NavBtnLink to="/download">Download</NavBtnLink>
         </NavBtn>
       </Nav>
     </>
