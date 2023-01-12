@@ -1,5 +1,4 @@
 #download div.download-page {
-  background-color: red;
   min-height: calc(100vh - 80px);
   background: url("../../images/groupBg.svg") no-repeat center;
   background-size: cover;
@@ -18,6 +17,7 @@
 #download div.download-page > div.download-page-left > p {
   width: max(250px, 80%);
   padding-bottom: 50px;
+  line-height: 25px;
 }
 
 #download > div > div.download-page-left > div.download-page-images {
@@ -60,14 +60,37 @@
   width: 80rem;
 }
 
-
 #download > div > div.download-page-right > img:nth-child(2) {
   position: absolute;
   right: 58px;
-
 }
 /* ---------------------- */
-#download .download-steps{
+#download .download-steps {
   width: 90%;
   margin: 50px auto;
+}
+
+@media screen and (max-width: 700px) {
+  #download div.download-page {
+    overflow-x: hidden;
+    flex-wrap: wrap;
+  }
+
+  #download > div > div.download-page-left {
+    text-align: center;
+  }
+
+  #download > div > div.download-page-left > p {
+    width: 100% !important;
+  }
+
+  #download > div > div.download-page-left > div.download-page-images {
+    width: 70%;
+    margin: 25px auto;
+  }
+
+  #download > div > div.download-page-left > div.download-page-stats {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }

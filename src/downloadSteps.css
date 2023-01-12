@@ -14,3 +14,51 @@
   padding-left: 40px;
   line-height: 30px;
 }
+
+@media screen and (max-width: 900px) {
+  #download-steps p {
+    padding-left: 0px;
+    line-height: 20px;
+  }
+
+  #download-steps > img {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #download-steps {
+    flex-direction: column;
+  }
+
+  #download-steps > img {
+    margin: 50px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+  }
+
+  #download > div > div.download-page-left > div.download-page-images {
+    width: 100% !important;
+  }
+
+  #download-steps p {
+    padding-left: 10px;
+  }
+
+  #download > div > div.download-page-left > div.download-page-stats {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 350px){
+  #download > div > div.download-page-left > div.download-page-images {
+    flex-direction: column;
+  }
+
+  #download > div > div.download-page-left > div.download-page-images > *{
+    margin-bottom: 20px;
+  }
+}

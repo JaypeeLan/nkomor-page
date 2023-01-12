@@ -24,7 +24,7 @@
 
 .feature .feature-text p {
   font-size: clamp(14px, 1vw, 19px);
-  width: 80%;
+  max-width: 80%;
 }
 /* -------- */
 #features > div:nth-child(3) > div:first-child,
@@ -32,4 +32,30 @@
   order: 1;
   position: relative;
   left: 128px;
+}
+
+@media screen and (max-width: 700px) {
+  .feature {
+    flex-direction: column;
+  }
+
+  .feature .feature-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .feature .feature-text h3,
+  .feature .feature-text p {
+    max-width: 100%;
+  }
+
+  .feature .feature-text p {
+    line-height: 20px;
+  }
+
+  #features > div:nth-child(3) > div:first-child,
+  #features > div:nth-child(5) > div:first-child {
+    order: initial;
+    left: 0;
+  }
 }

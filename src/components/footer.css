@@ -81,3 +81,18 @@ footer > div:nth-child(2) > hr {
   width: 95%;
   margin: 20px auto;
 }
+
+@media screen and (max-width: 560px) {
+  footer .footer-details {
+    flex-direction: column;
+  }
+
+  footer > div.footer-details > div.footer-links,
+  footer > div.footer-details > div.footer-socials {
+    text-align: center;
+  }
+
+  footer .footer-details .footer-links > div {
+    flex-direction: column;
+  }
+}
