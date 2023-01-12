@@ -56,7 +56,7 @@ export const MobileNavMenu = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: pink;
+  background-color: #29766e;
   height: 80vh;
   width: 100%;
   margin: 0 auto;

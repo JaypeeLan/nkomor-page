@@ -193,7 +193,28 @@
   -o-border-radius: 100px;
 }
 
-#get-started > *{
+#get-started > * {
   padding-bottom: 20px;
 }
 
+/* ------------------------------- */
+@media screen and (max-width: 800px) {
+  #home .home-details > div:last-child > img:last-child {
+    margin-top: -255px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #home .home-details > div:last-child > img:last-child {
+    margin-top: -200px;
+  }
+  #home > div.home-details > div:nth-child(2) > p {
+    position: initial;
+
+    width: 100%;
+  }
+}
+@media screen and (max-width: 456px) {
+  #home .home-details > div:last-child > img:last-child {
+    margin-top: -150px;
+  }
+}

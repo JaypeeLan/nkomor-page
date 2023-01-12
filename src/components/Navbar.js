@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import logo from "../images/logo.png";
 import line from "../images/Line.png";
 
