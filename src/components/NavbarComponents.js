@@ -32,6 +32,7 @@ export const Bars = styled(FaBars)`
     position: absolute;
     top: 0;
     right: 0;
+    margin-top: 5px;
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
@@ -47,6 +48,21 @@ export const NavMenu = styled.div`
     display: none;
   }
 `;
+// -=----------------------
+export const MobileNavMenu = styled.div`
+  position: absolute;
+  z-index: 99;
+  top: 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: pink;
+  height: 80vh;
+  width: 100%;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+`;
+// ------------------------------
 
 export const NavBtn = styled.nav`
   display: flex;
@@ -54,13 +70,13 @@ export const NavBtn = styled.nav`
   margin-right: 24px;
 
   @media screen and (max-width: 768px) {
-    display: none;
+    margin-right: 70px;
   }
 `;
 
 export const NavBtnLink = styled(Link)`
   border-radius: 30px;
-  background: #00605F;
+  background: #00605f;
   padding: 10px 22px;
   color: #fff;
   outline: none;

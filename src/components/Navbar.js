@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import logo from "../images/logo.png";
 import line from "../images/Line.png";
 
@@ -9,11 +9,13 @@ import {
   NavMenu,
   NavBtn,
   NavBtnLink,
+  MobileNavMenu,
 } from "./NavbarComponents";
 
 const Navbar = () => {
+  const [showNavbar, setShowNavbar] = useState(false);
   const showNav = () => {
-    console.log("hello");
+    setShowNavbar(!showNavbar);
   };
   return (
     <>
@@ -42,6 +44,26 @@ const Navbar = () => {
         <NavBtn>
           <NavBtnLink to="/download">Download</NavBtnLink>
         </NavBtn>
+
+        {showNavbar && (
+          <MobileNavMenu>
+            <NavLink to="/" activeStyle>
+              Home
+            </NavLink>
+
+            <NavLink to="/" activeStyle>
+              About
+            </NavLink>
+
+            <NavLink to="/" activeStyle>
+              Contact Us
+            </NavLink>
+
+            <NavLink to="/" activeStyle>
+              FAQ
+            </NavLink>
+          </MobileNavMenu>
+        )}
       </Nav>
     </>
   );

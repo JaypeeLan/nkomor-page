@@ -18,15 +18,21 @@ const Footer = ({ bgcolor, linksColor }) => {
             <div>
               <ul>
                 <li>
-                  <a href="/">About Us</a>{" "}
+                  <a href="/" style={{ color: `${linksColor}` }}>
+                    About Us
+                  </a>{" "}
                 </li>
 
                 <li>
-                  <a href="/">Contact Us</a>{" "}
+                  <a href="/" style={{ color: `${linksColor}` }}>
+                    Contact Us
+                  </a>{" "}
                 </li>
 
                 <li>
-                  <a href="/">FAQ's</a>{" "}
+                  <a href="/" style={{ color: `${linksColor}` }}>
+                    FAQ's
+                  </a>{" "}
                 </li>
               </ul>
             </div>
@@ -34,15 +40,21 @@ const Footer = ({ bgcolor, linksColor }) => {
             <div>
               <ul>
                 <li>
-                  <a href="/">Get Started</a>{" "}
+                  <a href="/" style={{ color: `${linksColor}` }}>
+                    Get Started
+                  </a>{" "}
                 </li>
 
                 <li>
-                  <a href="/">Privacy policy</a>{" "}
+                  <a href="/" style={{ color: `${linksColor}` }}>
+                    Privacy policy
+                  </a>{" "}
                 </li>
 
                 <li>
-                  <a href="/">Terms of use</a>{" "}
+                  <a href="/" style={{ color: `${linksColor}` }}>
+                    Terms of use
+                  </a>{" "}
                 </li>
               </ul>
             </div>
