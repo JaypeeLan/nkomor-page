@@ -2,7 +2,7 @@ import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const Nav = styled.nav`
+export const Nav = styled.nav `
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -10,7 +10,8 @@ export const Nav = styled.nav`
   z-index: 10;
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled(Link)
+`
   color: #080809;
   display: flex;
   align-items: center;
@@ -23,7 +24,8 @@ export const NavLink = styled(Link)`
   }
 `;
 
-export const Bars = styled(FaBars)`
+export const Bars = styled(FaBars)
+`
   display: none;
   color: #000;
 
@@ -39,7 +41,7 @@ export const Bars = styled(FaBars)`
   }
 `;
 
-export const NavMenu = styled.div`
+export const NavMenu = styled.div `
   display: flex;
   align-items: center;
   margin-right: -24px;
@@ -49,7 +51,7 @@ export const NavMenu = styled.div`
   }
 `;
 // -=----------------------
-export const MobileNavMenu = styled.div`
+export const MobileNavMenu = styled.div `
   position: absolute;
   z-index: 99;
   top: 70px;
@@ -57,14 +59,14 @@ export const MobileNavMenu = styled.div`
   align-items: center;
   flex-direction: column;
   background-color: #29766e;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   margin: 0 auto;
-  transition: all 0.3s ease;
+  text-transform: uppercase;
 `;
 // ------------------------------
 
-export const NavBtn = styled.nav`
+export const NavBtn = styled.nav `
   display: flex;
   align-items: center;
   margin-right: 24px;
@@ -74,7 +76,8 @@ export const NavBtn = styled.nav`
   }
 `;
 
-export const NavBtnLink = styled(Link)`
+export const NavBtnLink = styled(Link)
+`
   border-radius: 30px;
   background: #00605f;
   padding: 10px 22px;
